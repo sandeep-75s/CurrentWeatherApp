@@ -74,6 +74,7 @@ body{
     border: none;
     outline: none;
     border-radius: 10px;
+    padding-left:10px;
 }
 .search-btn {
     width: 40px;
