@@ -1,0 +1,380 @@
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+    
+}
+:root{
+    --ba : 2px solid black;
+}
+body{
+    background-color: rgb(34, 51, 68);
+}
+.main-container {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(34, 51, 68);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.container {
+    padding: 30px;
+    width: 50%;
+    height: 100%;
+    border: var(--ba);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.heading{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+}
+.tab {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    border: var(--ba);
+}
+.tab1,.tab2 {
+    width: 20%;
+    background-color: rgb(209, 231, 254);
+    color: white;
+    font-size: 110%;
+    background: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.tab1:hover,.tab2:hover{
+    background-color: rgb(209, 231, 254);
+}
+
+.search-div {
+    width: 100%;
+    height: 50px;
+    border: var(--ba);
+    display: flex;
+    align-items: center;
+}
+::placeholder{
+    color: white;
+}
+.search {
+    width: 92%;
+    height: 90%;
+    font-size: 20px;
+    background-color: rgba(209, 231, 254,0.5);
+    color: rgb(255, 255, 255);
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
+.search-btn {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    border-radius: 50%;
+    border: none;
+}
+.search-img {
+    width: 60%;
+    height: 60%;
+}
+
+.detail-div {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    border: var(--ba);
+    display: flex;
+    flex-direction: column ;
+    justify-content: space-evenly ;
+}
+.city-div {
+    width: 100%;
+    height: 40px;
+    border: var(--ba);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.city-name {
+    display: inline;
+    color: white;
+    font-size: 200%;
+    text-align: center;
+}
+.flag {
+    width: 25px;
+    height: 25px;
+    margin-left: 5px;
+
+}
+.weather-type-div {
+    width: 100%;
+    height: 30px;
+    border: var(--ba);
+    
+}
+.weather-type {
+   text-align: center;
+   color: white;
+   font-size: 120%; 
+}
+.weather-type-img {
+    width: 100%;
+    height: 40px;
+    border: var(--ba);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.weather-img {
+    height: 70px;
+    width: 70px;
+    
+}
+.weather-temp-div {
+    width: 100%;
+    height: 50px;
+    border: var(--ba);
+}
+.weather-temp {
+    text-align: center;
+    color: white;
+    font-size: 250%;
+}
+.All-detail-div {
+    width: 100%;
+    height: 220px;
+    border: var(--ba);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.wind-speed-div,.humidity-div,.cloud-div {
+    width: 30%;
+    height: 80%;
+    border: var(--ba);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: rgba(209, 231, 254,0.5);
+    padding: 10px;
+    
+}
+.wind-img ,.himidity-img,.cloud-img{
+    width: 25%;
+    height:35%;
+    margin-bottom: 5%;
+}
+.wind-speed-text,.humidity-text,.cloud-text {
+    color: white;
+    font-size: 150%;
+    margin-bottom: 3%;
+}
+.wind-speed,.humidity ,.cloud {
+    color: white;
+    font-size: 120%;
+}
+
+
+.loading-animation-div{
+    width: 100%;
+    height: 500px;
+    border: var(--ba);
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+}
+.loading-animation-div img{
+    width: 200px;
+    height: 200px;
+    margin: auto;
+}
+.location-div{
+    border: var(--ba);
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.location-div img{
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+}
+.location-div h3{
+    color: white;
+    font-size: 150%;
+    margin-bottom: 15px;
+}
+.location-div p{
+    color: white;
+    font-size: 90%;
+    margin-bottom: 10px;
+}
+.location-btn{
+    width: 20%;
+    height: 8%;
+    font-size: 110%;
+    background-color:rgba(209, 231, 254,0.5) ;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+@media (min-width:1000px) and (max-width:1300px){
+    .container{
+        width: 60%;
+    }
+    .tab1,.tab2{
+        font-size: 13px;
+    }
+}
+@media (min-width:800px) and (max-width:1000px){
+    .container{
+        width: 75%;
+    }
+    .tab1,.tab2{
+        font-size: 13px;
+    }
+}
+@media (min-width:660px) and (max-width:800px){
+    .container{
+        width: 85%;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .tab1,.tab2{
+        font-size: 13px;
+    }
+
+}
+@media (min-width:600px) and (max-width:660px){
+    .container{
+        width: 85%;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .tab1,.tab2{
+        font-size: 13px;
+    }
+    
+
+}
+
+@media (min-width:500px) and (max-width:600px){
+    .heading{
+        font-size: 30px;
+    }
+    .container{
+        width: 90%;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .tab1,.tab2{
+        font-size: 13px;
+    }
+    
+    .wind-speed-text,.humidity-text,.cloud-text{
+        font-size: 20px;
+    }
+    .tab2,.tab1{
+        font-size: 12px;
+    }
+    .location-btn{
+        font-size: 13px;
+    }
+
+}
+@media (min-width:365px) and (max-width:500px){
+    .heading{
+        font-size: 30px;
+    }
+    .container{
+        width: 90%;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .tab1,.tab2{
+        font-size: 13px;
+    }
+    .wind-speed-div,.humidity-div,.cloud-div{
+        width: 32%;
+
+    }
+    .wind-speed-text,.humidity-text,.cloud-text{
+        font-size: 15px;
+    }
+    .wind-img,.humidity-img,.cloud-img{
+        width: 50%;
+        height: 40%;
+    }
+    .tab2,.tab1{
+        font-size: 12px;
+        width: 30%;
+    }
+    .location-btn{
+        font-size: 10px;
+        width: 100px;
+    }
+
+}
+@media (min-width:270px) and (max-width:365px){
+    
+    .main-container{
+        overflow-y: auto;
+        height: 100%;
+    }
+    .heading{
+        font-size: 30px;
+    }
+    .container{
+        height: 100%;
+        width: 90%;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .tab1,.tab2{
+        font-size: 13px;
+    }
+    .wind-speed-div,.humidity-div,.cloud-div{
+        width: 100%;
+        height: 150px;
+
+    }
+    .wind-speed-text,.humidity-text,.cloud-text{
+        font-size: 15px;
+    }
+    .wind-img,.humidity-img,.cloud-img{
+        width: 30%;
+        height: 40%;
+    }
+    .tab2,.tab1{
+        font-size: 10px;
+        width: 30%;
+    }
+    .All-detail-div{
+        flex-wrap: wrap;
+        height: 500px;
+    }
+    .detail-div{
+        height: 800px;
+    }
+    
+    .location-btn{
+        font-size: 10px;
+        width: 100px;
+    }
+
+}

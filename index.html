@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="container">
+            <h1 class="heading">Weather App</h1>
+            <div class="tab">
+                <button class="tab1" data-userWeather>Your Location</button>
+                <button class="tab2" data-searchWeaather>Search Location</button>
+            </div>
+            <div class="search-div">
+                <input type="text" class="search" placeholder="search for city...">
+                <button class="search-btn"onclick="seaBtn()">
+                    <img src="./image/search-interface-symbol.png" alt="" class="search-img">
+                </button>
+            </div>
+            <div class="main-weather">
+
+                <div class="detail-div">
+                    <div class="city-div">
+                        <h2 class="city-name">Bihar</h2>
+                        <img src="./image/india.png" data-counteryIcon alt="flag" class="flag">
+                    </div>
+                    <div class="weather-type-div">
+                        <h3 class="weather-type">Clear</h3>
+                    </div>
+                    <div class="weather-type-img">
+                        <img src="./image/india.png" alt="" class="weather-img">
+                    </div>
+                    <div class="weather-temp-div">
+                        <h3 class="weather-temp">22.2</h3>
+                    </div>
+                    <div class="All-detail-div">
+                        <div class="wind-speed-div">
+                            <img src="./image/wind.png" alt="image" class="wind-img">
+                            <h2 class="wind-speed-text">Wind Speed</h2>
+                            <h2 class="wind-speed">25 Km/h</h2>
+                        </div>
+                        <div class="humidity-div">
+                            <img src="./image/humidity.png" alt="image" class="himidity-img">
+                            <h2 class="humidity-text">Humidity</h2>
+                            <h2 class="humidity">25%</h2>
+                        </div>
+                        <div class="cloud-div">
+                            <img src="./image/cloud.png" alt="image" class="cloud-img">
+                            <h2 class="cloud-text">Cloud</h2>
+                            <h2 class="cloud">0%</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="loading-animation-div">
+                    <img src="./image/loading.gif" alt="">
+                </div>
+                <div class="location-div">
+                    <img class="location-img" src="./image/location.png" alt="loadingimage" loading="lazy">
+                    <h3>Grant Location Access</h3>
+                    <p>Allow Access to get weather Information</p>
+                    <!-- <p id="loc">hgf</p> -->
+                    <button class="location-btn" data-grantAccess onclick="getLocation()">Grant access</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
